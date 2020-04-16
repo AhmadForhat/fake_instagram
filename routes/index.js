@@ -8,8 +8,8 @@ router.get('/', function(req, res, next) {
   res.render('auth/login');
 });
 
-router.get('/registro', function(req, res, next) {
-  res.render('auth/register');
+router.get('/registro', function(req,res,next){
+  res.render('auth/register')
 });
 
 router.get('/home', function(req, res, next) {

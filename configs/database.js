@@ -1,10 +1,10 @@
-const config = {
+const Sequelize = require('sequelize')
+
+const sequelize = new Sequelize('fake-instagram', 'rootInta', '', {
     host:'localhost',
     port:3000,
-    dialect:'mysql',
-    database:'fake-instagram',
-    user:'root',
-    password:''
-}
+    dialect:'mysql'
+  })
+  
 
-module.exports = config
+module.exports = sequelize
